@@ -68,6 +68,17 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.5.12</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mybatis</groupId>
+                    <artifactId>mybatis-spring</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>3.0.5</version>
         </dependency>
 
         <dependency>
@@ -89,21 +100,25 @@
         </dependency>
 
         <!-- Springfox依赖 -->
-        <dependency>
+       <!-- <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.4.1</version>
-        </dependency>
+        </dependency>-->
         <!-- 简化Bean代码 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <!-- springfox-boot-starter提供了基于Springfox的API文档(Swagger)生成功能 -->
+      <!--  &lt;!&ndash; springfox-boot-starter提供了基于Springfox的API文档(Swagger)生成功能 &ndash;&gt;
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
             <version>3.0.0</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.8.9</version>
         </dependency>
     </dependencies>
 

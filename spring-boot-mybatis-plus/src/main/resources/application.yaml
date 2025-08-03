@@ -7,3 +7,9 @@ spring:
     username: root
     url: jdbc:mysql://localhost:3306/demo?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+springdoc:
+  api-docs:
+    path: /custom-api-docs # 自定义 API 文档路径
+  swagger-ui:
+    path: /custom-swagger-ui # 自定义 Swagger UI 路径, http://localhost:8088/swagger-ui/index.html
